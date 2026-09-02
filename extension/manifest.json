@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "PhishGuard: Real-Time Behavioral Detector", 
+  "version": "1.0.4",
+  "description": "Privacy-preserving phishing detection using behavioral signals",
+  "permissions": [
+    "webRequest", 
+    "webNavigation", 
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1:5000/*"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"], 
+      "js": ["js/content.js"], 
+      "run_at": "document_start"
+    }
+  ],
+  "action": { 
+    "default_popup": "ui/popup.html",
+    "default_title": "PhishGuard"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["ui/alert.html", "ui/alert.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

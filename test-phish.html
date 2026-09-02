@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Bank Login - Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; }
+        .login-box { border: 1px solid #ccc; padding: 20px; width: 300px; margin: 0 auto; box-shadow: 2px 2px 12px #aaa; }
+        input { margin: 10px 0; padding: 8px; width: 90%; }
+        button { padding: 10px; width: 100%; background: blue; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Secure Bank Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <!-- Malicious hidden overlay trick to trigger the ROI scanner -->
+        <button id="fake-btn">Sign In</button>
+        <a style="opacity: 0" href="http://evil-server.com">Hidden tracking link</a>
+        <iframe src="about:blank" style="width: 1px; height: 1px; border: none;"></iframe>
+    </div>
+</body>
+</html>

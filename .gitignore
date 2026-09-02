@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env
+env.bak/
+venv.bak/
+
+# Logs and databases
+logs/
+*.log
+*.sqlite3
+*.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Application specific
+# We are currently committing the model and dataset since they are small, 
+# but if you train on a massive dataset later, uncomment the lines below:
+# backend/models/
+# backend/data/

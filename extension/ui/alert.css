@@ -1,0 +1,53 @@
+/* alert.css - High-contrast threat notification styles */
+#phishguard-alert { 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh;
+  background: rgba(139, 0, 0, 0.95);
+  z-index: 2147483647; /* Ensure it stays on top */ 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  color: white;
+  font-family: 'Verdana', sans-serif; 
+  text-align: center;
+}
+
+#phishguard-alert .warning-icon {
+  font-size: 80px; 
+  margin-bottom: 20px;
+}
+
+#phishguard-alert .threat-details { 
+  background: white; 
+  color: black; 
+  padding: 20px; 
+  border-radius: 10px; 
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+#phishguard-alert .action-buttons { 
+  margin-top: 30px;
+}
+
+#phishguard-alert .btn-proceed {
+  background: transparent; 
+  border: 1px solid white; 
+  color: white;
+  padding: 10px 20px; 
+  cursor: pointer;
+}
+
+#phishguard-alert .btn-safe-exit { 
+  background: white; 
+  color: darkred; 
+  font-weight: bold; 
+  padding: 15px 30px; 
+  border: none; 
+  margin-right: 20px; 
+  cursor: pointer;
+}
