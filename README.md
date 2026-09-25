@@ -1,4 +1,4 @@
-# PhishGuard 🛡️
+# PhishGuard AI Real Time Behavioral Threat Detection System
 
 A privacy-preserving, real-time phishing detection system that uses client-side behavioral analysis and a Random Forest machine learning model to neutralize zero-day threats. 
 
